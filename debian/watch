@@ -1,3 +1,2 @@
-version=3
-http://ftp.gnome.org/pub/gnome/sources/gnome-bluetooth/([\d\.]+[02468])/ \
-	gnome-bluetooth-(.*)\.tar\.xz
+version=2
+ftp://ftp.gnu.org/gnu/bash/bash-([\d\.]*).tar.gz debian uupdate

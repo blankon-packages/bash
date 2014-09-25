@@ -1,213 +1,224 @@
-This package was first debianized by Edd Dumbill <ejad@debian.org>
-on Thu Jun 10 11:14:24 BST 2004.
-The new version of gnome-bluetooth was debianized by Filippo Giunchedi
-<filippo@debian.org> on Sun May 24 17:47:30 CEST 2009
+This is Debian GNU/Linux's prepackaged version of the FSF's GNU Bash,
+the Bourne Again SHell.
 
-It was originally downloaded from http://usefulinc.com/software/gnome-bluetooth/
-Now gnome-bluetooth is a fork of bluez-gnome and can be found at
-http://live.gnome.org/GnomeBluetooth
+This package was put together by Matthias Klose <doko@debian.org>, from
+the following sources:
 
-Upstream Authors:
+  bash:			ftp.gnu.org:/pub/gnu/bash/bash-4.3.tar.gz
 
-    Marcel Holtmann <marcel@holtmann.org>
-    Bastien Nocera <hadess@hadess.net>
-    Chris Rivera <crivera@novell.com>
-    Jaap A. Haitsma <jaap@haitsma.org>
-    Antti Kaijanmäki <antti@kaijanmaki.net>
-    Michael Terry <michael.terry@canonical.com>
+Bash homepage:		 http://tiswww.case.edu/php/chet/bash/bashtop.html
 
-Copyright:
+Copyright (C) 1987-2014 Free Software Foundation, Inc.
 
-    wizard/main.c: GPL (v2 or later)
-      Copyright: 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+Bash is free software; you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free
+Software Foundation; either version 3, or (at your option) any later
+version.
 
-    wizard/pin.[hc]: GPL (v2 or later)
-      Copyright: 2009 Bastien Nocera <hadess@hadess.net>
+Bash is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License
+for more details.
 
-    applet/test-agentdialog.c: GPL (v2 or later)
-      Copyright: 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+You should have received a copy of the GNU General Public License
+along with Bash.  If not, see <http://www.gnu.org/licenses/>.
+On Debian systems, the complete text of the GNU General Public License
+can be found in `/usr/share/common-licenses/GPL-3'.
 
-    applet/*: GPL (v2 or later)
-      Copyright: 2006-2007 Bastien Nocera <hadess@hadess.net>
-                 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+The Free Software Foundation has exempted Bash from the requirement of
+Paragraph 2c of the General Public License.  This is to say, there is
+no requirement for Bash to print a notice when it is started
+interactively in the usual way.  We made this exception because users
+and standards expect shells not to print such messages.  This
+exception applies to any program that serves as a shell and that is
+based primarily on Bash as opposed to other GNU software.
 
-    common/obex-agent.[hc]: LGPL (v2.1 or later)
-      Copyright: 2005-2008 Marcel Holtmann <marcel@holtmann.org>
 
-    common/test-agent.c: GPL (v2 or later)
-      Copyright: 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+Files with other copyright statement than: Copyright FSF, License GPL
+---------------------------------------------------------------------
 
-    common/test-client.c: GPL (v2 or later)
-      Copyright: 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+doc/FAQ ("the Bash FAQ")
 
-    common/bluetooth-agent.[ch]: LGPL (v2.1 or later)
-      Copyright: 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+ This document is Copyright 1995-2005 by Chester Ramey.
 
-    common/bluetooth-client.[ch]: LGPL (v2.1 or later)
-      Copyright: 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+ Permission is hereby granted, without written agreement and
+ without license or royalty fees, to use, copy, and distribute
+ this document for any purpose, provided that the above copyright
+ notice appears in all copies of this document and that the
+ contents of this document remain unaltered.
 
-    common/bluetooth-enums.h: LGPL (v2.1 or later)
-      Copyright: 2005-2008 Marcel Holtmann <marcel@holtmann.org>
 
-    common/bluetooth-chooser-button.[ch]: LGPL (v2 or later)
-      Copyright: 2007 Bastien Nocera <hadess@hadess.net>
+doc/bashref.texi ("Bash Reference Manual"):
 
-    common/bluetooth-chooser.[ch]: LGPL (v2.1 or later)
-      Copyright: 2006-2007 Bastien Nocera <hadess@hadess.net>
-                 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+ Copyright (c) 1988-2014 Free Software Foundation, Inc.
 
-    common/test-deviceselection.c: GPL (v2 or later)
-      Copyright: 2006-2007 Bastien Nocera <hadess@hadess.net>
-                 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+ Permission is granted to make and distribute verbatim copies of
+ this manual provided the copyright notice and this permission notice
+ are preserved on all copies.
 
-    common/bluetooth-killswitch.[ch]: GPL (v2 or later)
-      Copyright: 2006-2009 Bastien Nocera <hadess@hadess.net>
-                 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+ Permission is granted to copy, distribute and/or modify this document
+ under the terms of the GNU Free Documentation License, Version 1.3 or
+ any later version published by the Free Software Foundation; with no
+ Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+ A copy of the license is included in the section entitled
+ ``GNU Free Documentation License''.
 
-    properties/gconf-bridge.[ch]: LGPL (v2 or later)
-      Copyright: 2005 OpenedHand Ltd
 
-    properties/*: GPL (v2 or later)
-      Copyright: 2006-2007 Bastien Nocera <hadess@hadess.net>
-                 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+lib/readline/doc/rlman.texi (part of the GNU Readline Library manual)
 
-    sendto/main.c: GPL (v2 or later)
-      Copyright: 2005-2008 Marcel Holtmann <marcel@holtmann.org>
+ Copyright (c) 1988-2014 Free Software Foundation, Inc.
 
-    lib/bling-spinner.c: LGPL (v2 or later)
-      Copyright: 2007 John Stowers, Neil Jagdish Patel
+ Permission is granted to copy, distribute and/or modify this document
+ under the terms of the GNU Free Documentation License, Version 1.3 or
+ any later version published by the Free Software Foundation; with no
+ Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+ A copy of the license is included in the section entitled
+ ``GNU Free Documentation License''.
 
-    lib/rfkill.h: GPL (v2 or later)
-      Copyright: 2006, 2007 Ivo van Doorn, 2007 Dmitry Torokhov,
-                 2009 Johannes Berg <johannes@sipsolutions.net>
+lib/readline/doc/rltech.texi (part of the GNU Readline Library manual)
 
-    help/{C,cs,el,fi,fr,gl,ro,sl,sv,te,th,pa,zh,zw}/*: GFDL-NIV (Version 1.1 or later)
-      Copyright: 2009 Baptiste Mille-Mathias
+ Copyright (C) 1988-2014 Free Software Foundation, Inc.
 
-    help/da/*: GFDL-NIV (Version 1.1 or later)
-      Copyright: 2009 Baptiste Mille-Mathias
-      Copyright: 2011-2013 Flemming Christensen
+ Permission is granted to make and distribute verbatim copies of
+ this manual provided the copyright notice and this permission notice
+ pare preserved on all copies.
 
-    help/ko/*: GFDL-NIV (Version 1.1 or later)
-      Copyright:  2009 Baptiste Mille-Mathias
-      Copyright 2011, 2013 Seong-ho, Cho
+ Permission is granted to process this file through TeX and print the
+ results, provided the printed document carries copying permission
+ notice identical to this one except for the removal of this paragraph
+ (this paragraph not being relevant to the printed manual).
 
-    help/id/*: GFDL-NIV (Version 1.1 or later)
-      Copyright:  2009 Baptiste Mille-Mathias
-      Copyright 2012, 2013 Andika Triwidada
+ Permission is granted to copy and distribute modified versions of this
+ manual under the conditions for verbatim copying, provided that the entire
+ resulting derived work is distributed under the terms of a permission
+ notice identical to this one.
 
-    help/ca/*: GFDL-NIV (Version 1.1 or later)
-      Copyright: 2009 Baptiste Mille-Mathias
-      Copyright 2011, 2013 David Aguilera
+ Permission is granted to copy and distribute translations of this manual
+ into another language, under the above conditions for modified versions,
+ except that this permission notice may be stated in a translation approved
+ by the Foundation.
 
-    help/es/*: GFDL-NIV (Version 1.1 or later)
-      Copyright: 2009 Baptiste Mille-Mathias
-      Copyright: 2012 Daniel Mustieles
-      Copyright: 2007-2008 Jorge González
 
-    help/de/*: GFDL-NIV (Version 1.1 or later)
-      Copyright: 2009 Baptiste Mille-Mathias
-      Copyright: 2009-2013 Mario Blättermann
+lib/readline/doc/rluser.texi (part of the GNU Readline Library manual)
 
-    help/ru/*: GFDL-NIV (Version 1.1 or later)
-      Copyright: 2009 Baptiste Mille-Mathias
-      Copyright: 2010 Leonid Kanter
-      Copyright: 2011 Stanislav Kolotinskiy
-      Copyright: 2011 Yuri Myasoedov
-      Copyright: 2013 Stas Solovey
+ Copyright (C) 1988-2014 Free Software Foundation, Inc.
 
-    help/pt_BR/*: GFDL-NIV (Version 1.1 or later)
-      Copyright: 2009 Baptiste Mille-Mathias
-      Copyright: 2013 Rafael Ferreira
+ Authored by Brian Fox and Chet Ramey.
 
-    help/ca/ca.po: GPL version 2 or later
-    Copyright: David Aguilera <david.aguilera.moncusi@gmail.com>, 2011.
+ Permission is granted to process this file through Tex and print the
+ results, provided the printed document carries copying permission notice
+ identical to this one except for the removal of this paragraph (this
+ paragraph not being relevant to the printed manual).
 
-    help/cs/cs.po: GPL version 2 or later
-    Copyright: Marek Černocký <marek@manet.cz>, 2009, 2010, 2013.
+ Permission is granted to make and distribute verbatim copies of this manual
+ provided the copyright notice and this permission notice are preserved on
+ all copies.
 
-    help/da/da.po: GPL version 2 or later
-    Copyright: NickyThomassen <nicky.thomassen@gmail.com>, 2011.
+ Permission is granted to copy and distribute modified versions of this
+ manual under the conditions for verbatim copying, provided also that the
+ GNU Copyright statement is available to the distributee, and provided that
+ the entire resulting derived work is distributed under the terms of a
+ permission notice identical to this one.
 
-    help/da/da.po: GPL version 2 or later
-    Copyright: flemming christensen <fc@stromata.dk>, 2011, 2012, 2013.
+ Permission is granted to copy and distribute translations of this manual
+ into another language, under the above conditions for modified versions.
 
-    help/de/de.po: GPL version 2 or later
-    Copyright: Mario Blättermann <mario.blaettermann@gmail.com>, 2009, 2010, 2012, 2013.
 
-    help/el/el.po: GPL version 2 or later
-    Copyright: Μάριος Ζηντίλης <m.zindilis@dmajor.org>, 2009.
-    Copyright: Marios Zindilis <m.zindilis@dmajor.org>, 2010.
+readline/doc/history.texi (GNU History Library Manual)
 
-    help/el/el.po: GPL version 2 or later
-    Copyright: Dimitris Spingos (Δημήτρης Σπίγγος) <dmtrs32@gmail.com>, 2013.
+ Copyright (C) 1988-2014 Free Software Foundation, Inc.
+ Authored by Brian Fox and Chet Ramey.
 
-    help/es/es.po: GPL version 2 or later
-    Copyright: Jorge González <jorgegonz@svn.gnome.org>, 2009.
+ Permission is granted to copy, distribute and/or modify this document
+ under the terms of the GNU Free Documentation License, Version 1.3 or
+ any later version published by the Free Software Foundation; with no
+ Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+ A copy of the license is included in the section entitled
+ ``GNU Free Documentation License''.
 
-    help/es/es.po: GPL version 2 or later
-    Copyright: Daniel Mustieles <daniel.mustieles@gmail.com>, 2012.
+readline/doc/{hstech,hsuser}.texi (GNU History Library Manual)
 
-    help/fi/fi.po: GPL version 2 or later
-    Copyright: Kaarina V. Sauna-aho <kaarina.v.sauna-aho@nomovok.com>, 2010.
+ Copyright (C) 1988-2014 Free Software Foundation, Inc.
+ Authored by Brian Fox and Chet Ramey.
 
-    help/fr/fr.po: GPL version 2 or later
-    Copyright: Claude Paroz <claude@2xlibre.net>, 2009-2010
+ Permission is granted to make and distribute verbatim copies of this manual
+ provided the copyright notice and this permission notice are preserved on
+ all copies.
 
-    help/gl/gl.po: GPL version 2 or later
-    Copyright: Fran Dieguez <frandieguez@gnome.org>, 2011, 2013.
+ Permission is granted to process this file through Tex and print the
+ results, provided the printed document carries copying permission notice
+ identical to this one except for the removal of this paragraph (this
+ paragraph not being relevant to the printed manual).
 
-    help/id/id.po: GPL version 2 or later
-    Copyright: Andika Triwidada <andika@gmail.com>, 2012, 2013.
+ Permission is granted to copy and distribute modified versions of this
+ manual under the conditions for verbatim copying, provided also that the
+ GNU Copyright statement is available to the distributee, and provided that
+ the entire resulting derived work is distributed under the terms of a
+ permission notice identical to this one.
 
-    help/ko/ko.po: GPL version 2 or later
-    Copyright: Seong-ho Cho <darkcircle.0426@gmail.com>, 2011, 2013.
+ Permission is granted to copy and distribute translations of this manual
+ into another language, under the above conditions for modified versions.
 
-    help/pa/pa.po: GPL version 2 or later
-    Copyright: A S Alam <aalam@users.sf.net>, 2010.
 
-    help/pt_BR/pt_BR.po: GPL version 2 or later
-    Copyright: Rafael Ferreira <rafael.f.f1@gmail.com>, 2013.
+lib/sh/inet_aton.c:
 
-    help/ro/ro.po: GPL version 2 or later
-    Copyright: cosminx2003 <cosminx2003@yahoo.com>, 2010.
-    Copyright: Daniel Șerbănescu <cyber19rider@gmail.com>, 2011.
+ * Copyright (c) 1983, 1990, 1993
+ *    The Regents of the University of California.  All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions
+ * are met:
+ * 1. Redistributions of source code must retain the above copyright
+ *    notice, this list of conditions and the following disclaimer.
+ * 2. Redistributions in binary form must reproduce the above copyright
+ *    notice, this list of conditions and the following disclaimer in the
+ *    documentation and/or other materials provided with the distribution.
+ * 3. All advertising materials mentioning features or use of this software
+ *    must display the following acknowledgement:
+ *      This product includes software developed by the University of
+ *      California, Berkeley and its contributors.
+ * 4. Neither the name of the University nor the names of its contributors
+ *    may be used to endorse or promote products derived from this software
+ *    without specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+ * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ * ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+ * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+ * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+ * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+ * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ * SUCH DAMAGE.
+ * -
+ * Portions Copyright (c) 1993 by Digital Equipment Corporation.
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies, and that
+ * the name of Digital Equipment Corporation not be used in advertising or
+ * publicity pertaining to distribution of the document or software without
+ * specific, written prior permission.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND DIGITAL EQUIPMENT CORP. DISCLAIMS ALL
+ * WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES
+ * OF MERCHANTABILITY AND FITNESS.   IN NO EVENT SHALL DIGITAL EQUIPMENT
+ * CORPORATION BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL
+ * DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR
+ * PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS
+ * ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
+ * SOFTWARE.
 
-    help/ro/ro.po:Copyright: GPL version 2 or later
-    Copyright: Daniel Șerbănescu <daniel@serbanescu.dk>, 2012.
 
-    help/ru/ru.po:Copyright: GPL version 2 or later
-    Copyright: Leonid Kanter <leon@asplinux.ru>, 2010.
+support/man2html.c
 
-    help/ru/ru.po:Copyright: GPL version 2 or later
-    Copyright: Yuri Kozlov <yuray@komyakino.ru>, 2011.
-
-    help/ru/ru.po:Copyright: GPL version 2 or later
-    Copyright: Stas Solovey <whats_up@tut.by>, 2013.
-
-    help/te/te.po:Copyright: GPL version 2 or later
-    Copyright (C) 2011 e-telugu organisation
-
-    help/te/te.po:Copyright: GPL version 2 or later
-    Copyright: Praveen Illa <mail2ipn@gmail.com>, 2011.
-
-    help/th/th.po:Copyright: GPL version 2 or later
-    Copyright (C) 2009 Free Software Foundation, Inc.
-
-    help/th/th.po:Copyright: GPL version 2 or later
-    Copyright: Akom C. <knight2000@gmail.com>, 2009.
-
-    help/zh_CN/zh_CN.po:Copyright: GPL version 2 or later
-    Copyright: Zhang Miao <mymzhang@gmail.com>, 2009.
-
-    help/zh_*K/zh_HK.po:Copyright: GPL version 2 or later
-    Copyright: Cheng-Chia Tseng <pswo10680@gmail.com>, 2010.
-
-    help/zh_TW/zh_TW.po:Copyright: GPL version 2 or later
-    Copyright: Cheng-Chia Tseng <pswo10680@gmail.com>, 2010.
-
-On Debian GNU/Linux systems, the complete text of the GNU General
-Public License can be found in `/usr/share/common-licenses/GPL'.
-
-On Debian GNU/Linux systems, the complete text of the GNU Lesser General
-Public License can be found in `/usr/share/common-licenses/LGPL'.
+ * This program was written by Richard Verhoeven (NL:5482ZX35)
+ * at the Eindhoven University of Technology. Email: rcb5@win.tue.nl
+ *
+ * Permission is granted to distribute, modify and use this program as long
+ * as this comment is not removed or changed.
+ *
+ * THIS IS A MODIFIED VERSION.  IT WAS MODIFIED BY chet@po.cwru.edu FOR
+ * USE BY BASH.
